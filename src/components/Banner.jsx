@@ -1,10 +1,10 @@
 import '../style/Banner.css'
 
 
-function Banner(){
+function Banner({text}){
     return (
 <div className='banner'>
-        <div className='banner-text'>Chez vous, partout et ailleurs</div>
+        <div className='banner-text'>{text}</div>
 </div>
     )
 }

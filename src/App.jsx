@@ -1,8 +1,7 @@
 import './style/App.css'
 
-import Header from './components/Header.jsx'
+import Nav from './components/Nav.jsx'
 import Footer from './components/Footer.jsx'
-
 import Home from './pages/Home.jsx'
 import About from './pages/About.jsx'
 import Error from './pages/Error.jsx'
@@ -13,7 +12,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 function App() {
   return (
       <Router>
-        <Header />
+        <Nav />
           <Routes>
             <Route path='/' element={<Home />} />
             <Route path='/about' element={<About />} />

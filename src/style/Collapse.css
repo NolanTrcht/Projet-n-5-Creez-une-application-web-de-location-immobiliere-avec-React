@@ -1,0 +1,51 @@
+
+
+
+.collapse{
+    background-color: rgba(255, 96, 96, 1);
+    width: 45%;
+    justify-self: center;
+    border-radius: 5px;
+    margin: 20px 0;
+}
+
+.drop-down{
+ font-size: 1.2em;
+ transition: transform 0.3s ease;
+ color: white;
+}
+
+.rotate{
+ transform: rotate(180deg);
+ transition: transform 0.3s ease;
+}
+
+.collapse-header{
+    background-color: rgba(255, 96, 96, 1);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 8px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.collapse-text{
+    color: black;
+    background-color: rgb(243, 243, 243);
+    font-size: 0.75em;
+    text-align: left;
+    border-radius: 5px;
+    overflow: hidden;
+    max-height: 300px;
+    opacity: 1;
+    transition: max-height 0.4s ease, opacity 0.4s ease;
+    padding: 10px;
+}
+.collapse-text.hide{
+  max-height: 0;
+  opacity: 0;
+  padding: 0 10px;
+}
+
