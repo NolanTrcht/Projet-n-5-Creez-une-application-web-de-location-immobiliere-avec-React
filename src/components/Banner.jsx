@@ -1,9 +1,10 @@
-import '../style/Banner.css'
+import '../style/Banner.scss'
 
 
-function Banner({text}){
+
+function Banner({text, image}){
     return (
-<div className='banner'>
+<div className='banner'  style={{ backgroundImage: `url(${image})`}}>
         <div className='banner-text'>{text}</div>
 </div>
     )

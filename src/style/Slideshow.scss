@@ -1,0 +1,67 @@
+@use "../style/variables.scss" as *;
+
+.title {
+  color: red;
+}
+
+.slideshow {
+  position: relative;
+  width: 100%;
+  height: $slideshow-height_desktop;
+
+&-picture {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: $slideshow-borderradius;
+}
+
+&-number {
+  position: absolute;
+  left: 50%;
+  top: 85%;
+  color: white;
+  font-size: 12px;
+}
+}
+
+
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 4em;
+  color: white;
+  cursor: $main-cursor;
+  z-index: 1;
+
+&.left {
+  left: 15px;
+}
+&.right {
+  right: 15px;
+}
+}
+
+
+@media (max-width: 768px){
+  .slideshow {
+  height: $slideshow-height_mobile;
+}
+  .arrow {
+  font-size: 1.5em;
+}
+
+.arrow.left {
+  left: 5px;
+}
+
+/* droite */
+.arrow.right {
+  right: 0px;
+}
+
+.slideshow-number {
+  display: none;
+}
+}

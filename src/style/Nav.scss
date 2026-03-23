@@ -1,0 +1,38 @@
+@use "../style/variables.scss" as *;
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: auto;
+  height: $nav-header_height;
+  margin: 1em 2rem 0 2rem;
+
+&-logo {
+  width: 130px;
+  text-align: center;
+  cursor: $main-cursor;
+}
+
+&-nav a {
+  color: black;
+  padding: $nav-link_padding;
+  margin-top: 10px;
+}
+
+&-nav .active {
+  text-decoration: underline;
+}
+}
+
+@media (max-width: 768px) {
+  .header-logo {
+    width: 160px;
+  }
+
+  .header-nav a {
+    text-transform: uppercase;
+    font-size: 0.8em;
+    padding: 0 20px 0 10px;
+  }
+}

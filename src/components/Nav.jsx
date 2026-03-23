@@ -1,4 +1,4 @@
-import '../style/Nav.css'
+import '../style/Nav.scss'
 import { NavLink } from "react-router-dom"
 import { useNavigate } from 'react-router-dom'
 

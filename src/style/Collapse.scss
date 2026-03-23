@@ -1,0 +1,59 @@
+@use "../style/variables.scss" as *;
+
+.collapse{
+    width: 85%;
+    /* justify-self: center; */
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+
+
+&-header{
+    background-color: $main-color;
+    color: white;
+    display: flex;
+    border-radius: 5px;
+    justify-content: space-between;
+    padding: 8px;
+    font-family: $main-font;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+&-text{
+    color: black;
+    background-color: rgb(243, 243, 243);
+    font-size: 0.75em;
+    text-align: left;
+    border-radius: 5px;
+    overflow: hidden;
+    max-height: $collapse-maxheight;
+    opacity: 1;
+    transition: max-height 0.4s ease, opacity 0.4s ease;
+    padding: 10px;
+}
+&-text.hide{
+  max-height: 0;
+  opacity: 0;
+  padding: 0 10px;
+}
+}
+
+.drop-down{
+ font-size: 1.2em;
+ transition: transform 0.3s ease;
+ color: white;
+}
+
+.rotate{
+ transform: rotate(180deg);
+ transition: transform 0.3s ease;
+}
+
+@media (max-width: 768px) {
+  .collapse{
+    width: 100%; 
+}
+
+}
+

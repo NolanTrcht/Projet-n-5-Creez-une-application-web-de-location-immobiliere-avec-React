@@ -1,11 +1,12 @@
 
 import Collapse from '../components/Collapse.jsx'
 import Banner from "../components/Banner.jsx"
+import BannerImage2 from "../assets/banner_image2.png"
 
 function About(){
     return(
         <div>
-            <Banner />
+            <Banner image={BannerImage2}/>
             <Collapse title="Fiabilité"> Les annonces postées sur Kasa garantissent une fiabilité totale. Les photos sont conformes aux logements, et toutes les informations sont régulièrement vérifiées  par nos équipes.</Collapse>
             <Collapse title="Respect">La bienveillance fait partie des valeurs fondatrices de Kasa. Tout comportement discriminatoire ou de perturbation du voisinage entraînera une exclusion de notre plateforme.</Collapse>
             <Collapse title="Service">La qualité du service est au cœur de notre engagement chez Kasa. Nous veillons à ce que chaque interaction, que ce soit avec nos hôtes ou nos locataires, soit empreinte de respect et de bienveillance.</Collapse>
