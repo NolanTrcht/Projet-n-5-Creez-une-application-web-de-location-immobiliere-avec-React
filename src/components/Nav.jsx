@@ -8,7 +8,7 @@ function Nav(){
 
     return(
         <div className='header'>
-            <img src='/logo.png' className='header-logo' onClick={() => navigate("/")}/>
+            <img src='/logo.png' alt="Logo" className='header-logo' onClick={() => navigate("/")}/>
             <div className='header-nav'>
                 <NavLink to ="/">Accueil</NavLink>
                 <NavLink to="/about">A Propos</NavLink>
