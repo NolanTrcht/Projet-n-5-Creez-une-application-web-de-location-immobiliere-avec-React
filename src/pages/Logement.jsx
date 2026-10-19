@@ -47,7 +47,7 @@ function Logement(){
                 />
                 ))}
             </span>
-            <p className="logement-name mobile">{logement.host.name}</p>
+              
   </div>
 </div>
         <div className="logement-collapse">
